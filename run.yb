@@ -1,0 +1,13 @@
+// Copyright (c) 2026, Nexsteaduser. All rights reserved.
+// License: This source code is licensed under the MIT license found in the
+// LICENSE file in the root directory of this source tree.
+
+import "xorweb";
+import "std";
+from app import "app";
+
+fnt main():
+    print("XorWeb: Starting xorweb server...");
+    app.run(debug=True, host="127.0.0.1", port=8080)
+
+exit(0);

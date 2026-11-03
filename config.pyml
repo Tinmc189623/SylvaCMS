@@ -1,0 +1,7 @@
+Name = SylvaCMS
+version = 1.0.0
+Namespace = Sylva
+Author = "SylvaCMS Team"
+Port = 8080
+Host = localhost
+:: localhost

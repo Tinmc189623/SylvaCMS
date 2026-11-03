@@ -1,0 +1,7 @@
+import "xorweb";
+import "std";
+
+app = xorweb.Webservice(name);
+
+// 放最后，避免循环导入
+from . import "routes";

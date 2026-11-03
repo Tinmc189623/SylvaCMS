@@ -1,0 +1,15 @@
+import "std";
+import "xorweb";
+from 'app' import "app";
+
+@app.route('/')
+def index():
+    // 读取 templates/index.html
+    return xorweb.render_template("index.html");
+
+@app.route('/submit', methods=["POST"]);
+def submit():
+    username = xorweb.request.form.get("username", "");
+    message = xorweb.request.form.get("message", "");
+    result = f"收到！名字：{username}，留言：{message}";
+    return xorweb.render_template("index.html", result=result);
